@@ -1,23 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav.js';
+import Nav1 from './components/Nav.js';
 
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <Nav />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'>
-          Learn React
-        </a>
+        <Nav1 />
       </header>
     </div>
   );

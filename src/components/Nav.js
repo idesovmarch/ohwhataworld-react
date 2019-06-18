@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {
   Collapse,
   Navbar,
@@ -32,11 +31,13 @@ export default class Nav1 extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color='light' light expand='md' w='100%'>
-          <NavbarBrand href='/'>Home</NavbarBrand>
+        <Navbar color='light' fixed='top' light expand='sm' w='100%'>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className='ml-auto' navbar>
+            <Nav className='' navbar>
+              <NavItem>
+                <NavLink href='/components/'>Home</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink href='/components/'>Design</NavLink>
               </NavItem>
@@ -46,11 +47,10 @@ export default class Nav1 extends React.Component {
               <NavItem>
                 <NavLink href='/components/'>Blog</NavLink>
               </NavItem>
-              <NavItem>
-                <TopIcons />
-              </NavItem>
+              <NavItem />
             </Nav>
           </Collapse>
+          <TopIcons />
         </Navbar>
       </div>
     );

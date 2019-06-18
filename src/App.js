@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav1 from './components/Nav.js';
+import TopIcons from './components/TopIcons';
 
 function App() {
   return (
